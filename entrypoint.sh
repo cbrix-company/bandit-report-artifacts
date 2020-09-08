@@ -1,5 +1,8 @@
 #!/bin/sh -l
 
+PYENV_ROOT=/root/.pyenv
+PATH=$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
+
 if [ -z "$INPUT_PYTHON_VERSION" ]; then
     echo "🔥🔥🔥🔥🔥No python version provided🔥🔥🔥🔥🔥🔥"
     exit 1
