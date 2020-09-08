@@ -4,6 +4,7 @@ if [ -z "$INPUT_PYTHON_VERSION" ]; then
     echo "🔥🔥🔥🔥🔥No python version provided🔥🔥🔥🔥🔥🔥"
     exit 1
 else
+    env
     pyenv install $INPUT_PYTHON_VERSION
     pyenv global $INPUT_PYTHON_VERSION
     pyenv rehash
